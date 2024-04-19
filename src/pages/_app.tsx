@@ -3,8 +3,6 @@ import { I18nProvider } from 'next-localization';
 import { SitecorePageProps } from 'lib/page-props';
 import Bootstrap from 'src/Bootstrap';
 import { Fira_Sans, Fira_Sans_Condensed, Noto_Sans, Playfair_Display } from 'next/font/google';
-
-
 import 'assets/main.scss';
 
 const noto = Noto_Sans({
@@ -38,10 +36,8 @@ const playfairDisplay = Playfair_Display({
   display: 'swap',
 });
 
-
 function App({ Component, pageProps }: AppProps<SitecorePageProps>): JSX.Element {
   const { dictionary, ...rest } = pageProps;
-
   return (
     <>
       <style jsx global>{`
@@ -52,8 +48,6 @@ function App({ Component, pageProps }: AppProps<SitecorePageProps>): JSX.Element
           --font-playfairDisplay: ${playfairDisplay.style.fontFamily};
         }
       `}</style>
-
-
       <Bootstrap {...pageProps} />
       {/*
         // Use the next-localization (w/ rosetta) library to provide our translation dictionary to the app.
