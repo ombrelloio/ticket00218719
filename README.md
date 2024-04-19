@@ -4,4 +4,4 @@
 
 [Documentation (XM Cloud)](https://doc.sitecore.com/xmc/en/developers/xm-cloud/sitecore-javascript-rendering-sdk--jss--for-next-js.html)
 
-trigger deploy
+trigger deploy again
