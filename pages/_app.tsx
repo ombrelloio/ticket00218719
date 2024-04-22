@@ -33,7 +33,7 @@ const playfairDisplay = Playfair_Display({
   display: 'swap',
 });
 
-export default function MyApp({ Component, pageProps }: AppProps) {
+export default function MyApp({  }: AppProps) {
   return (
   <>
       <style jsx global>{`
